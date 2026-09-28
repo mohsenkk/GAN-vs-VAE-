@@ -1,4 +1,57 @@
-# Stage 09A — DCGAN-DTA Variant C 128/4/8 Kaggle preflight
+# Stage 09A — DCGAN-DTA Variant C 128/4/8 controlled full training
+
+**Closure (2026-09-28): PASS for controlled full training and held-out evaluation.** The accepted forensic review establishes completion of the planned single-fold Stage 09A run. Numerical paper reproduction remains unverified.
+
+## Completed-run evidence
+
+Returned artifacts are preserved under [results/stage09a_full/](results/stage09a_full/). The [summary](results/stage09a_full/summary.json), [CSV history](results/stage09a_full/history.csv), JSONL history, [training log](results/stage09a_full/training.log), [events](results/stage09a_full/events.jsonl), memory samples, checkpoints, and saved prediction/target vectors were independently inspected.
+
+| Item | Verified full-run evidence |
+|---|---|
+| Dataset / split | PDBbind, warm setting / `problem_type=1`, `is_log=0`; shipped validation fold 0: 836 pairs; training folds 1–4: 3,344 pairs |
+| Configuration | DCGAN-DTA Variant C; 128 filters / drug kernel 4 / protein kernel 8; batch size 256; SMILES/protein caps 200/2000 |
+| Native drug GAN | One fresh call; 5,000 iterations, batch 5; no protein GAN or reused preflight GAN state |
+| Training | **150 completed epochs**, **2,100 optimizer updates** (14 batches per epoch); maximum allowed 300 epochs |
+| Checkpoint selection | Strict maximum native validation `val_cindex_score`; **best epoch 75**, **best native validation CI 0.763699** |
+| Stopping | Native validation-CI early stopping after **75 consecutive non-improving epochs**, at epoch 150 |
+| Held-out evaluation | **Best checkpoint restored before held-out evaluation**; **exactly one held-out prediction pass**, **834 pairs** |
+| Exit / numerical state | Worker return code 0; no recorded exception or numerical failure; predictions finite |
+
+The history's maximum native validation CI occurs at epoch 75. All 50 recorded best-checkpoint updates strictly increased that metric. The training log confirms restoration of epoch 75; the event sequence places best-checkpoint validation before opening the held-out fold and before the single test pass. Native parsing loads the full affinity matrix, but held-out fold membership is not opened until after selection. Final-epoch weights remain separately saved; their lower validation MSE does not replace the predefined CI-selected checkpoint.
+
+| Held-out metric | Verified result | Paper Fig. 3 Variant C reference (context only) |
+|---|---:|---:|
+| Global CI | **0.767271** | 0.768 |
+| Reconstructed native batch CI | **0.766640** | Estimator alignment unverified |
+| MSE | **2.113802** | 1.907 |
+| AUPR (`y > 7`) | **0.781662** | 0.787 |
+| RM2 | **0.405841** | 0.451 |
+
+Global CI uses the repository's full-vector `emetrics.get_cindex`. Native batch CI was reconstructed with the source `cindex_score` on each native batch, sample-count weighted, from the same single held-out prediction vector; it does not imply a second model prediction or evaluation pass.
+
+| Resource measurement | Verified result |
+|---|---|
+| Total parent runtime | **47m15s** (2,834.550 s, rounded) |
+| Peak host RSS | **3.77 GiB** (4,051,161,088 bytes), below the 12 GiB limit |
+| Sampled GPU peak | **13,883 MiB**, below the **14,848 MiB** safety threshold by 965 MiB |
+
+All 2,809 parent memory samples stayed within the thresholds. GPU monitoring covers physical GPU 0, including other processes; sampled peaks do not establish an instantaneous maximum.
+
+## Integrity, provenance, and claim boundary
+
+CSV and JSONL histories agree on epochs and native validation values. Saved validation and held-out vectors contain 836 and 834 finite predictions respectively; independently recomputed MSE and MAE agree with the summary. Returned source-file hashes and the runner hash match their recorded identities. The runner SHA-256 is `0d79880083c723bef7c0f3072ea855a761a14537c0e4eaf0f40fdba3558ce966`; local nested HEAD at preparation is `453fe16a3c6279dff3ddd4bd28ee63f50465b799`. Kaggle checkout Git identity remains unverified; the summary retains source/data/fold hashes and reports the source copy unchanged.
+
+Execution used Python 3.12.13, TensorFlow/`tf_keras` 2.20.0, NumPy 2.0.2, and one visible Tesla T4. Native NumPy/Python seeds were 1 and TensorFlow-v1 seed 0; deterministic GPU execution is not claimed. Declared controls include the fixed single-fold configuration, external legacy-Keras mapping, omission of the unused NumPy-2-incompatible `np.mat` allocation, and additional validation diagnostics. Baseline source, datasets, and folds were not patched.
+
+**Numerical paper reproduction remains unverified because the paper's complete selection, aggregation, and metric protocol is not fully recoverable.** Published values above are contextual references, never PASS thresholds. This run establishes controlled full-training and held-out-evaluation credibility for this named configuration and split; it does not reproduce the historical search or published aggregate, establish all-fold convergence, or support a direct comparison with Co-VAE on another dataset.
+
+**Revision of the previous scoped conclusion:** the retained preflight below established only one-epoch feasibility and left full training and held-out evaluation unverified. The completed-run artifacts now establish those two boundaries, so **Stage 09A is closed as PASS**. Stage 09 as a whole is not closed. This documentation update does not start Stage 09B, Stage 10, representation extraction, or hybrid implementation.
+
+---
+
+## Historical bounded preflight record
+
+The following preflight findings are retained unchanged. Statements about an unperformed full run or unopened test fold describe that earlier preflight, not the completed run documented above.
 
 **Decision: PASS for the bounded preflight.** On the selected Tesla T4, the fixed paper-reported 128/4/8 Variant C path completed one fresh native drug-GAN call, constructed the DTA model, completed one batch-256 epoch with 14 optimizer updates, and evaluated the first shipped validation fold. All returned training and validation values were finite. The worker and runner exited 0; the runner reported `preflight_pass: true` with every recorded PASS criterion true. This establishes one-epoch execution and sampled resource feasibility for this configuration. It is **not** full Stage 09A training, test evaluation, convergence evidence, model-quality evidence, or paper-number reproduction.
 

@@ -11,6 +11,69 @@
 
 ## 1. Stage Status
 
+### Current milestone — Stage 10A protocol design in progress (2026-09-28)
+
+**Stage 10A: protocol design IN PROGRESS; DRAFT / NOT FROZEN.** [Common Davis protocol draft](audit/10-common-davis-head-to-head/PROTOCOL-DRAFT.md) proposes Davis new-drug, one version-stable SHA-256-ranked drug split with design-date seed **20260928**, and **46/11/11 drugs = 20,332/4,862/4,862 train/validation/test pairs**. No Stage 10 benchmark or training has started; no final manifest, runner, evaluator or protocol freeze is created by this task.
+
+The draft retains fixed native configurations and training policies while specifying common canonical labels, pair alignment and external metrics. Native DCGAN GAN pretraining includes all 68 Davis drugs; the proposed primary excludes those exact inputs in a separately derived corpus, with exposure sensitivity and claim limits documented. **READY TO FREEZE: NO** pending review of corpus/coldness policy, validation-selection asymmetry, metric convention and split policy. The draft lists static integration prerequisites and conditional compute estimates, not a new execution result.
+
+**Stage 09 remains COMPLETE and frozen**: Stage 09A and Stage 09B CLOSED / PASS conclusions and results are unchanged. Their earlier status blocks below are historical snapshots. Stage 11+, representation extraction, hybrid/fusion and convex optimization remain unstarted. Runner implementation, manifests and benchmark execution require later explicit authorization.
+
+### Historical milestone — Stage 09B closure; Stage 09 complete (2026-09-28)
+
+**Stage 09B: CLOSED / PASS for controlled full training and held-out evaluation. Stage 09 overall: COMPLETE** for the planned minimum controlled baseline-credibility runs. **Stage 10: NOT STARTED.** Completion does not establish exact numerical paper reproduction for either baseline.
+
+| Stage | Current status | Evidence |
+|---|---|---|
+| 09A — DCGAN-DTA | **CLOSED / PASS**; accepted conclusion unchanged | [DCGAN-DTA audit](audit/09-baseline-reproduction/DCGAN-DTA.md) |
+| 09B — Co-VAE | **CLOSED / PASS** for controlled full training and held-out evaluation | [Co-VAE audit](audit/09-baseline-reproduction/Co-VAE.md), [completed-run summary](audit/09-baseline-reproduction/CoVAE-resluts/stage09b_full/final_summary.json) |
+| 09 overall | **COMPLETE** — both planned minimum runs closed | The two baseline audits above |
+| 10 — Fair Baseline Comparison | **NOT STARTED**; requires separate explicit authorization | No common Davis benchmark design or execution performed by this closure |
+
+Co-VAE used **Davis new-drug / `problem_type=2`**, **32 filters / drug kernel 5 / target kernel 7 / lambda exponent -5**, batch **256**, and drug/target lengths **85/1200**. Native Adam at default lr **0.001** was recreated each epoch: **100 complete epochs, 9,900 optimizer updates, 100 optimizer constructions**. The seed-1000 drug split supplied **25,194 training / 4,862 held-out pairs**, **57 training / 11 test drugs**, and **zero drug overlap**; ordered split hashes match the preparation reference.
+
+Final epoch-100 weights were saved before **exactly one held-out prediction pass**. Held-out tensors and loader access were deferred until the completion gate; the native parser still loaded the full raw affinity matrix and membership metadata before training. All recorded losses and predictions are finite. All **18 artifact hashes** passed verification; runner/source/data fingerprints match, and independent saved-vector calculations agree within numerical tolerance.
+
+| Co-VAE held-out metric | Verified result |
+|---|---:|
+| Native CI | 0.664941 |
+| MSE | 0.863547 |
+| External MAE | 0.664325 |
+| Native RM2 | 0.143994 |
+| ROC AUC at pKd > 7 | 0.732374 |
+
+CI preserves the native **order-sensitive lower-triangle** convention; ROC AUC is **not AUPR**. Runtime was **41m44s**, peak sampled host RSS **1.69 GiB**, sampled GPU peak **2,463 MiB**, below the **14,848 MiB** safety limit; worker exit code **0**.
+
+The claim is a **representative paper-grid full-training reference**. **Numerical paper reproduction remains unverified:** only one predeclared configuration and deterministic split were used; the selected paper configuration is undisclosed, the paper reports ten random splits with aggregated mean/std, and its full model-selection protocol was not reproduced. Davis new-drug paper references are contextual only: CI **0.712 ± 0.063**, MSE **0.724 ± 0.096**, MAE **0.550 ± 0.048**, RM2 **0.107**. They do not establish reproduction or close agreement. The two native-dataset runs also do not support a direct cross-model ranking.
+
+**Historical evidence:** [Co-VAE preparation](audit/09-baseline-reproduction/Co-VAE-PREPARATION.md) remains unchanged; its execution “NOT RUN” statement and estimates describe preparation time. Completed-run evidence supersedes that scoped status, without rewriting prior findings. The Stage 09A closure and earlier planning records below remain historical snapshots; their incomplete/future-stage statements are superseded by this current milestone. Source, datasets, folds, result artifacts, and Stage 09A conclusions remain unchanged.
+
+**Boundary:** Stage 10, common Davis benchmark design, representation extraction, hybrid/fusion implementation and convex optimization have **not started** through this closure and require separate authorization.
+
+### Historical milestone — Stage 09A closure (2026-09-28)
+
+**Stage 09A: PASS for controlled full training and held-out evaluation; closed.** Evidence: [DCGAN-DTA report](audit/09-baseline-reproduction/DCGAN-DTA.md) and [completed-run summary](audit/09-baseline-reproduction/results/stage09a_full/summary.json), with histories, logs, checkpoints, and prediction vectors in `audit/09-baseline-reproduction/results/stage09a_full/`.
+
+PDBbind warm setting / `problem_type=1`; DCGAN-DTA Variant C **128/4/8**, batch **256**. The single-fold run completed **150 epochs** and **2,100 optimizer updates**. **Epoch 75** maximized native validation CI at **0.763699**; early stopping followed **75 consecutive non-improving epochs**. The best checkpoint was explicitly restored before **exactly one held-out prediction pass on 834 pairs**.
+
+| Held-out metric | Verified result | Paper reference (context only) |
+|---|---:|---:|
+| Global CI | 0.767271 | 0.768 |
+| Reconstructed native batch CI | 0.766640 | Estimator alignment unverified |
+| MSE | 2.113802 | 1.907 |
+| AUPR | 0.781662 | 0.787 |
+| RM2 | 0.405841 | 0.451 |
+
+Measured runtime: **47m15s**; peak host RSS: **3.77 GiB**; sampled GPU peak: **13,883 MiB**, below the **14,848 MiB** safety threshold. Saved predictions are finite; counts and independently recomputed MSE/MAE agree with the summary, and histories and recorded source identities were cross-checked.
+
+**Numerical paper reproduction remains unverified because the paper's complete selection, aggregation, and metric protocol is not fully recoverable.** Paper values are contextual references, not acceptance thresholds. The earlier preflight established one-epoch feasibility only; the new full-run evidence establishes controlled full training and held-out evaluation.
+
+**Scope:** Stage 09A is closed, not Stage 09 as a whole. Stage 09B, Stage 10, representation extraction, and hybrid implementation remain unstarted by this task and require separate explicit authorization. Baseline model source, datasets, and folds remain unchanged.
+
+### Historical status snapshot at Stage 07B (2026-09-25)
+
+The table and execution statement below retain the earlier snapshot; the current Stage 09B / Stage 09 closure above supersedes its future-stage expectations.
+
 | Stage | Skill | Output | Status |
 |---|---|---|---|
 | 01 | — | — | **does not exist** (numbering starts at 02) |
@@ -326,6 +389,12 @@ Full detail in `audit/04-dataset-fold/`. Key numbers for citation:
 ---
 
 ## 6. Roadmap
+
+**Current update (2026-09-28): Stage 10A protocol design is IN PROGRESS; the benchmark is NOT EXECUTED and the protocol is NOT FROZEN.** Review the [draft](audit/10-common-davis-head-to-head/PROTOCOL-DRAFT.md) before authorizing further work. Stage 09 is complete/frozen; Stage 11+ has not started. The earlier updates and roadmap below remain historical evidence, not permission for execution.
+
+**Historical update at Stage 09B closure (2026-09-28; superseded only for the Stage 10 design status): Stages 09A and 09B are CLOSED / PASS; Stage 09 overall is COMPLETE** for controlled full training and held-out evaluation. Numerical paper reproduction remains unverified. **Stage 10 has NOT STARTED**; no common Davis benchmark, representation extraction, hybrid/fusion or convex-optimization work begins through this documentation closure.
+
+**Historical update at Stage 09A closure (2026-09-28; superseded): Stage 09A is closed as PASS; Stage 09 remains incomplete.** Stage 09B and all later work require separate authorization. The following roadmap is retained as the historical Stage 07B snapshot; its “Next Stage 08” wording is not the current execution status.
 
 | Step | Description | Gate |
 |---:|---|---|

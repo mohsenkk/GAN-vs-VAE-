@@ -1,0 +1,27 @@
+{
+  "name": "Davis",
+  "drug_count": 68,
+  "target_count": 442,
+  "observed_pairs": 30056,
+  "XD_shape": [
+    68,
+    85
+  ],
+  "XT_shape": [
+    442,
+    1200
+  ],
+  "Y_shape": [
+    68,
+    442
+  ],
+  "unique_protein_sequences": 379,
+  "duplicate_protein_sequence_groups": 18,
+  "targets_in_duplicate_sequence_groups": 81,
+  "label_transform": "-log10(Kd/1e9), native Davis loader",
+  "dataset_sha256": {
+    "ligands_iso.txt": "9789900f1e723226187215235b379998e5735a3ffec0e9487bad27c1c6a64161",
+    "proteins.txt": "187cedeee10cd3b58af915a2861a5ed0c4ff42a2d728f4dea5e0b47e3d75b291",
+    "drug-target_interaction_affinities_Kd__Davis_et_al.2011v1.txt": "31b3f3efea9afe53239fa9fe735aedd6195586b99261319917b55b1d1c9e8392"
+  }
+}

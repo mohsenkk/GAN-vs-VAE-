@@ -1,0 +1,42 @@
+{
+  "phase": "completed",
+  "current_epoch": 150,
+  "max_epochs": 300,
+  "best_epoch": 75,
+  "best_val_native_ci_so_far": 0.763698935508728,
+  "epochs_since_improvement": 75,
+  "patience": 75,
+  "patience_remaining": 0,
+  "latest_train_loss": 0.2369544357061386,
+  "latest_train_ci": 0.9312230944633484,
+  "latest_val_loss": 1.911800503730774,
+  "latest_val_native_ci": 0.7602730989456177,
+  "latest_val_global_ci": 0.7628671099839891,
+  "latest_val_mse": 2.0795454131026423,
+  "latest_val_aupr": 0.7909076231845938,
+  "latest_val_rm2": 0.43335453171057686,
+  "latest_diagnostic_epoch": 75,
+  "paper_reference": {
+    "ci": 0.768,
+    "aupr": 0.787,
+    "rm2": 0.451,
+    "mse": 1.907
+  },
+  "metric_gaps": {
+    "ci_gap_to_paper": 0.005132890016010916,
+    "aupr_gap_to_paper": -0.003907623184593811,
+    "rm2_gap_to_paper": 0.01764546828942315,
+    "mse_gap_to_paper": 0.17254541310264226
+  },
+  "elapsed_seconds": 2830.421665541,
+  "estimated_remaining_seconds": 0.0,
+  "worker_rss_bytes": 3749974016,
+  "gpu_used_mib": 13883,
+  "gpu_total_mib": 15360,
+  "warnings": [
+    "validation CI plateau of at least 50 epochs",
+    "train/validation native CI gap above 0.15"
+  ],
+  "test_evaluation_count": 1,
+  "last_update_timestamp": 1790549694.08094
+}

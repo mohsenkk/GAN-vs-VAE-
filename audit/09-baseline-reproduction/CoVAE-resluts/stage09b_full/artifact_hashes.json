@@ -1,0 +1,43 @@
+{
+  "algorithm": "SHA256",
+  "files": {
+    "dataset_summary.json": "39a8cd43e3a0fe8f82c95a083f874cf822a6da8c6d50ea46c8bfe85ae1484c06",
+    "environment.json": "984ada4128dce821e68b6b05572100e7df481610178ec237abaddd02d627d256",
+    "events.jsonl": "a7c179dc29a5930c8f5bfdee3ec25c5edf93d7f132a313e839da2f8977b11cd5",
+    "experiment_started.lock": "4fd018769e2d3dd667cea1b4fcd0131f8e592a1b763d0fee8f876f03aa1325f2",
+    "final_model.state_dict.pt": "8239df4d9e0b60a517c81d541ffb1da6cb52407588b0ad7bd025f857efd10701",
+    "final_summary.json": "ac7d00e439561dccc111a11bfd200b0d419d162ea7e1f06c7fbf44489fa5e4ed",
+    "history.csv": "0ed302b18269f29a10a3de7373230754b3a36eb999411653115464e40448bdc6",
+    "history.jsonl": "da127796480e115b10b3fea6e277acf7a3e3c9209ea5325ab895d67e95551aa9",
+    "live_status.json": "f97e5accfae2ccddb6e3c815242cb3eae7af6249ee469d17e0e4c3a0f1e89571",
+    "milestones.jsonl": "cf1c53d15613cbd81e9468c6c1ff93ca4edde4c218543b9e2730fdb2628f6a63",
+    "model_summary.txt": "7457737a8a96ed2c43d5b4e613e26ee94f4709aa0d135c79a5089ea4608ac3b0",
+    "protocol.json": "da696a69dc07b543ea29d0ccddb33c49e5664815a4cc8c8e113fd80b030419e5",
+    "resource_history.csv": "3d269a2f8d1e76bd24b24e6e07c10096b947fb6ab9c65df1b1305e0cf82aaf38",
+    "split_membership.json": "f018f641032928e60e1b2e5f0a7e86b01699e9b80c880be10b260b0d052f5319",
+    "split_summary.json": "9d30c5b5cd9e7a0b7bbf409c13785ef0cf7fd8a92fe3a740ff93b99c4e40f6f1",
+    "test_predictions.csv": "efc1599edabc20654e336b530375d191718d86269e3dc70318f923525b2a4833",
+    "training.log": "65cdb5f5801d0171b2279e53eb91f8b4ac2336d61f99f5fba0f96f4bc061d450",
+    "worker_summary.json": "a9cec875a3714191f0b1f3722f4c29b879a461eb6151aa22331e458b5bd4458e"
+  },
+  "self_excluded": "artifact_hashes.json",
+  "immutable_inputs": {
+    "source_sha256": {
+      "run_experiments.py": "39546fa554e628bf4f30dc492d152ed1235fbeedfc83c713218dd0d40d108043",
+      "model.py": "a6dc416b3c4257d67e226fb1888d6236c6203f483d943415c5c1a8879e32e8fc",
+      "arguments.py": "1b9416dfb212a9c92bda76ec5eea18561530055b9b442d6c0c07e4a483fc388a",
+      "datahelper.py": "eb7f1245531be9d5cf9e8099e5063125eac0c5dc3b6dbfe5fda9947f797b917c",
+      "emetrics.py": "031696e05fb3c40ea3607ec76c76dcc5079d888d8a7ac2c60658e0cd041fc7f9"
+    },
+    "dataset_sha256": {
+      "ligands_iso.txt": "9789900f1e723226187215235b379998e5735a3ffec0e9487bad27c1c6a64161",
+      "proteins.txt": "187cedeee10cd3b58af915a2861a5ed0c4ff42a2d728f4dea5e0b47e3d75b291",
+      "drug-target_interaction_affinities_Kd__Davis_et_al.2011v1.txt": "31b3f3efea9afe53239fa9fe735aedd6195586b99261319917b55b1d1c9e8392"
+    },
+    "runner_sha256": "c5be744f18ed0cf6298ecbc32c50380362122adf8c34988745b7ad023b31c7b2",
+    "input_path": "/kaggle/input/models/mohsenkashefikia/covae-model/pytorch/default/1/CoVAE",
+    "local_nested_HEAD_at_preparation": "2c172682e502e3d39f6cc6a6d5bca428326e7d0b",
+    "input_git_identity_verified": false
+  },
+  "missing_required": []
+}

@@ -1,0 +1,15 @@
+Worker PID 54; source /kaggle/input/models/mohsenkashefikia/dcgan/tensorflow2/default/1/DCGAN-DTA; output /kaggle/working/stage09a_full
+data_ready at 26.0s
+gan_completed at 606.5s
+variant_c_constructed at 606.5s
+dta_epoch_completed at 644.8s
+dta_epoch_completed at 794.0s
+dta_epoch_completed at 1044.0s
+dta_epoch_completed at 1441.3s
+dta_epoch_completed at 1797.6s
+dta_epoch_completed at 2138.7s
+dta_epoch_completed at 2820.3s
+best_validation_completed at 2827.4s
+test_evaluation_completed at 2831.5s
+Final status: completed; reason: early_stopped_after_plateau
+Summary: /kaggle/working/stage09a_full/summary.json

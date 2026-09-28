@@ -1,0 +1,104 @@
+{
+  "claim": "representative paper-grid full-training reference",
+  "dataset": "Davis",
+  "setting": "new-drug",
+  "flags": {
+    "seq_window_lengths": [
+      7
+    ],
+    "smi_window_lengths": [
+      5
+    ],
+    "num_windows": [
+      32
+    ],
+    "max_seq_len": 1200,
+    "max_smi_len": 85,
+    "num_epoch": 100,
+    "batch_size": 256,
+    "dataset_path": "/kaggle/input/models/mohsenkashefikia/covae-model/pytorch/default/1/CoVAE/data/davis/",
+    "problem_type": 2,
+    "is_log": 0,
+    "checkpoint_path": "",
+    "log_dir": "/kaggle/working/stage09b_full",
+    "lamda": [
+      -5
+    ],
+    "charseqset_size": 25,
+    "charsmiset_size": 64,
+    "drug_count": 68,
+    "target_count": 442
+  },
+  "argv": [
+    "run_experiments.py",
+    "--dataset_path",
+    "/kaggle/input/models/mohsenkashefikia/covae-model/pytorch/default/1/CoVAE/data/davis/",
+    "--problem_type",
+    "2",
+    "--is_log",
+    "0",
+    "--num_windows",
+    "32",
+    "--smi_window_lengths",
+    "5",
+    "--seq_window_lengths",
+    "7",
+    "--lamda",
+    "-5",
+    "--batch_size",
+    "256",
+    "--num_epoch",
+    "100",
+    "--max_smi_len",
+    "85",
+    "--max_seq_len",
+    "1200",
+    "--log_dir",
+    "/kaggle/working/stage09b_full"
+  ],
+  "source_identity": {
+    "source_sha256": {
+      "run_experiments.py": "39546fa554e628bf4f30dc492d152ed1235fbeedfc83c713218dd0d40d108043",
+      "model.py": "a6dc416b3c4257d67e226fb1888d6236c6203f483d943415c5c1a8879e32e8fc",
+      "arguments.py": "1b9416dfb212a9c92bda76ec5eea18561530055b9b442d6c0c07e4a483fc388a",
+      "datahelper.py": "eb7f1245531be9d5cf9e8099e5063125eac0c5dc3b6dbfe5fda9947f797b917c",
+      "emetrics.py": "031696e05fb3c40ea3607ec76c76dcc5079d888d8a7ac2c60658e0cd041fc7f9"
+    },
+    "dataset_sha256": {
+      "ligands_iso.txt": "9789900f1e723226187215235b379998e5735a3ffec0e9487bad27c1c6a64161",
+      "proteins.txt": "187cedeee10cd3b58af915a2861a5ed0c4ff42a2d728f4dea5e0b47e3d75b291",
+      "drug-target_interaction_affinities_Kd__Davis_et_al.2011v1.txt": "31b3f3efea9afe53239fa9fe735aedd6195586b99261319917b55b1d1c9e8392"
+    },
+    "runner_sha256": "c5be744f18ed0cf6298ecbc32c50380362122adf8c34988745b7ad023b31c7b2",
+    "input_path": "/kaggle/input/models/mohsenkashefikia/covae-model/pytorch/default/1/CoVAE",
+    "local_nested_HEAD_at_preparation": "2c172682e502e3d39f6cc6a6d5bca428326e7d0b",
+    "input_git_identity_verified": false
+  },
+  "configuration_rationale": "32 fixed filters; 5/7/-5 belong to the paper grid; winning Davis configuration undisclosed",
+  "model": "RE.net(flags,32,5,7).cuda(); model.apply(RE.weights_init)",
+  "loss": "MSE + 10**(-5) * (drug_reconstruction_plus_KL + 85/1200 * target_reconstruction_plus_KL)",
+  "loss_f": "mean(sequence-summed cross entropy + diagonal Gaussian KL); separate terms not exposed",
+  "optimizer": "native Adam recreated by RE.train every epoch; default lr checked == 0.001",
+  "epoch_selection": "fixed epoch 100; no early stopping or selection by validation/test/paper numbers",
+  "seeds": {
+    "python": 1000,
+    "numpy": 1000,
+    "torch_cpu": 1000,
+    "torch_cuda": 1000,
+    "split": 1000,
+    "python_hash_at_launch": 0
+  },
+  "determinism": "seeded; bitwise GPU determinism not claimed; no backend flags changed",
+  "native_test": "one RE.test call; CI, MSE, RM2, ROC AUC at pKd > 7; no native AUPR return",
+  "external_metrics": "MSE/MAE and chunked full-vector check of native CI estimator from saved CSV",
+  "compatibility": "temporary external random.sample set-to-tuple shim only during native split construction",
+  "controls": "one split/fit, full outer training pool, no native grid/test-informed driver or repeated-test checkpoints",
+  "heldout_access": "membership metadata allowed; no held-out tensors/loader until completion gate; native parser loads full Y",
+  "evaluation_stochasticity": "native VAE reparameterization samples CUDA noise even under eval/no_grad",
+  "safety": {
+    "host_rss_limit_bytes": 12884901888,
+    "gpu_headroom_mib": 512,
+    "wall_time_kill": null,
+    "poll_seconds": 1.0
+  }
+}

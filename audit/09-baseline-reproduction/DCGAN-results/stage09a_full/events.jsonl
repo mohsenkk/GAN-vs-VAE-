@@ -1,0 +1,372 @@
+{"kind": "environment_ready", "epoch_seconds": 1790546880.8990476, "environment": {"python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]", "tensorflow": "2.20.0", "tf_keras": "2.20.0", "numpy": "2.0.2", "platform": "Linux-6.12.90+-x86_64-with-glibc2.35", "cpu_count": 4, "cuda_visible_devices": "0", "tf_use_legacy_keras": "1", "gpu_details": {"compute_capability": [7, 5], "device_name": "Tesla T4"}, "memory_growth": true}}
+{"kind": "data_ready", "epoch_seconds": 1790546887.8643453, "dataset": {"name": "PDBbind", "XD_shape": [4231, 200], "XT_shape": [1606, 2000], "Y_shape": [4231, 1606], "XD_t_shape": [50068, 200], "observed_pairs": 5014, "native_parse_data_loads_full_affinity_matrix": true}, "fold_identity": {"validation_fold_zero_based": 0, "training_folds_zero_based": [1, 2, 3, 4], "heldout_test_fold_file_read": false, "heldout_pair_count_inferred_from_remainder": 834}, "fold_sizes": {"train": 3344, "validation": 836, "heldout_inferred_not_loaded": 834, "train_batches": 14, "validation_batches": 4}}
+{"kind": "memory_boundary", "epoch_seconds": 1790546887.9001257, "label": "before_gan", "sample": {"epoch_seconds": 1790546887.900121, "worker_rss_bytes": 2124140544, "gpu_used_mib": 3, "gpu_total_mib": 15360}}
+{"kind": "gan_started", "epoch_seconds": 1790546887.9006486}
+{"kind": "gan_completed", "epoch_seconds": 1790547468.8319573, "runtime_seconds": 580.931307687}
+{"kind": "memory_boundary", "epoch_seconds": 1790547468.8665261, "label": "after_gan_before_dta_construction", "sample": {"epoch_seconds": 1790547468.8665223, "worker_rss_bytes": 2092662784, "gpu_used_mib": 257, "gpu_total_mib": 15360}}
+{"kind": "variant_c_constructed", "epoch_seconds": 1790547469.091772, "parameters": 3605121}
+{"kind": "memory_boundary", "epoch_seconds": 1790547469.125901, "label": "after_variant_c_construction", "sample": {"epoch_seconds": 1790547469.1258981, "worker_rss_bytes": 2092752896, "gpu_used_mib": 257, "gpu_total_mib": 15360}}
+{"kind": "dta_fit_started", "epoch_seconds": 1790547469.130271, "planned_epochs": 300, "planned_batches_per_epoch": 14}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547503.3087258, "epoch": 1, "val_native_ci": 0.5796294212341309}
+{"kind": "memory_boundary", "epoch_seconds": 1790547506.9053519, "label": "epoch_1", "sample": {"epoch_seconds": 1790547506.9053473, "worker_rss_bytes": 2827214848, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547506.9298885, "epoch": 1, "optimizer_updates": 14, "best_epoch": 1, "best_val_native_ci": 0.5796294212341309}
+{"kind": "milestone", "epoch_seconds": 1790547506.9327598, "epoch": 1}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547519.8441935, "epoch": 2, "val_native_ci": 0.5865669846534729}
+{"kind": "memory_boundary", "epoch_seconds": 1790547523.244194, "label": "epoch_2", "sample": {"epoch_seconds": 1790547523.2441897, "worker_rss_bytes": 2922131456, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547523.520563, "epoch": 2, "optimizer_updates": 28, "best_epoch": 2, "best_val_native_ci": 0.5865669846534729}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547536.184115, "epoch": 3, "val_native_ci": 0.6034034490585327}
+{"kind": "memory_boundary", "epoch_seconds": 1790547539.60695, "label": "epoch_3", "sample": {"epoch_seconds": 1790547539.606945, "worker_rss_bytes": 2888876032, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547539.8786309, "epoch": 3, "optimizer_updates": 42, "best_epoch": 3, "best_val_native_ci": 0.6034034490585327}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547552.7263267, "epoch": 4, "val_native_ci": 0.6150822639465332}
+{"kind": "memory_boundary", "epoch_seconds": 1790547556.136908, "label": "epoch_4", "sample": {"epoch_seconds": 1790547556.136904, "worker_rss_bytes": 2932506624, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547556.4091675, "epoch": 4, "optimizer_updates": 56, "best_epoch": 4, "best_val_native_ci": 0.6150822639465332}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547569.7763119, "epoch": 5, "val_native_ci": 0.6215000152587891}
+{"kind": "memory_boundary", "epoch_seconds": 1790547573.2284431, "label": "epoch_5", "sample": {"epoch_seconds": 1790547573.2284374, "worker_rss_bytes": 2952871936, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547573.3117483, "epoch": 5, "optimizer_updates": 70, "best_epoch": 5, "best_val_native_ci": 0.6215000152587891}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547586.5366087, "epoch": 6, "val_native_ci": 0.6306285858154297}
+{"kind": "memory_boundary", "epoch_seconds": 1790547589.9635012, "label": "epoch_6", "sample": {"epoch_seconds": 1790547589.9634967, "worker_rss_bytes": 2999701504, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547590.2385805, "epoch": 6, "optimizer_updates": 84, "best_epoch": 6, "best_val_native_ci": 0.6306285858154297}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547603.2702785, "epoch": 7, "val_native_ci": 0.6378915905952454}
+{"kind": "memory_boundary", "epoch_seconds": 1790547606.8165677, "label": "epoch_7", "sample": {"epoch_seconds": 1790547606.8165636, "worker_rss_bytes": 2957651968, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547606.8236752, "epoch": 7, "optimizer_updates": 98, "best_epoch": 7, "best_val_native_ci": 0.6378915905952454}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547619.7366905, "epoch": 8, "val_native_ci": 0.6468679308891296}
+{"kind": "memory_boundary", "epoch_seconds": 1790547623.2057118, "label": "epoch_8", "sample": {"epoch_seconds": 1790547623.2057068, "worker_rss_bytes": 2968510464, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547623.2126782, "epoch": 8, "optimizer_updates": 112, "best_epoch": 8, "best_val_native_ci": 0.6468679308891296}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547636.0032308, "epoch": 9, "val_native_ci": 0.653889000415802}
+{"kind": "memory_boundary", "epoch_seconds": 1790547639.4343941, "label": "epoch_9", "sample": {"epoch_seconds": 1790547639.4343903, "worker_rss_bytes": 2968444928, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547639.7087243, "epoch": 9, "optimizer_updates": 126, "best_epoch": 9, "best_val_native_ci": 0.653889000415802}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547652.6783075, "epoch": 10, "val_native_ci": 0.6575303673744202}
+{"kind": "memory_boundary", "epoch_seconds": 1790547656.2096891, "label": "epoch_10", "sample": {"epoch_seconds": 1790547656.2096853, "worker_rss_bytes": 3009175552, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547656.21663, "epoch": 10, "optimizer_updates": 140, "best_epoch": 10, "best_val_native_ci": 0.6575303673744202}
+{"kind": "milestone", "epoch_seconds": 1790547656.219483, "epoch": 10}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547669.4410582, "epoch": 11, "val_native_ci": 0.6678582429885864}
+{"kind": "memory_boundary", "epoch_seconds": 1790547672.8607411, "label": "epoch_11", "sample": {"epoch_seconds": 1790547672.860737, "worker_rss_bytes": 2979094528, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547673.109606, "epoch": 11, "optimizer_updates": 154, "best_epoch": 11, "best_val_native_ci": 0.6678582429885864}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547686.3210998, "epoch": 12, "val_native_ci": 0.6712369322776794}
+{"kind": "memory_boundary", "epoch_seconds": 1790547689.7923732, "label": "epoch_12", "sample": {"epoch_seconds": 1790547689.7923684, "worker_rss_bytes": 3022893056, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547690.0670989, "epoch": 12, "optimizer_updates": 168, "best_epoch": 12, "best_val_native_ci": 0.6712369322776794}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547703.2279713, "epoch": 13, "val_native_ci": 0.6750255227088928}
+{"kind": "memory_boundary", "epoch_seconds": 1790547706.706923, "label": "epoch_13", "sample": {"epoch_seconds": 1790547706.7069187, "worker_rss_bytes": 3031031808, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547706.7144783, "epoch": 13, "optimizer_updates": 182, "best_epoch": 13, "best_val_native_ci": 0.6750255227088928}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547719.6862524, "epoch": 14, "val_native_ci": 0.6778526306152344}
+{"kind": "memory_boundary", "epoch_seconds": 1790547723.110208, "label": "epoch_14", "sample": {"epoch_seconds": 1790547723.1102045, "worker_rss_bytes": 2991431680, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547723.385652, "epoch": 14, "optimizer_updates": 196, "best_epoch": 14, "best_val_native_ci": 0.6778526306152344}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547736.292845, "epoch": 15, "val_native_ci": 0.6815149188041687}
+{"kind": "memory_boundary", "epoch_seconds": 1790547739.7300417, "label": "epoch_15", "sample": {"epoch_seconds": 1790547739.730038, "worker_rss_bytes": 3035021312, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547739.737077, "epoch": 15, "optimizer_updates": 210, "best_epoch": 15, "best_val_native_ci": 0.6815149188041687}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547752.7233121, "epoch": 16, "val_native_ci": 0.6874971389770508}
+{"kind": "memory_boundary", "epoch_seconds": 1790547756.2109501, "label": "epoch_16", "sample": {"epoch_seconds": 1790547756.2109444, "worker_rss_bytes": 3077562368, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547756.263639, "epoch": 16, "optimizer_updates": 224, "best_epoch": 16, "best_val_native_ci": 0.6874971389770508}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547769.342259, "epoch": 17, "val_native_ci": 0.6910855770111084}
+{"kind": "memory_boundary", "epoch_seconds": 1790547772.7740886, "label": "epoch_17", "sample": {"epoch_seconds": 1790547772.7740839, "worker_rss_bytes": 3088261120, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547772.9304538, "epoch": 17, "optimizer_updates": 238, "best_epoch": 17, "best_val_native_ci": 0.6910855770111084}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547786.0320966, "epoch": 18, "val_native_ci": 0.6941166520118713}
+{"kind": "memory_boundary", "epoch_seconds": 1790547789.392341, "label": "epoch_18", "sample": {"epoch_seconds": 1790547789.392337, "worker_rss_bytes": 3034370048, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547789.6666791, "epoch": 18, "optimizer_updates": 252, "best_epoch": 18, "best_val_native_ci": 0.6941166520118713}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547802.7600167, "epoch": 19, "val_native_ci": 0.6992016434669495}
+{"kind": "memory_boundary", "epoch_seconds": 1790547806.2075646, "label": "epoch_19", "sample": {"epoch_seconds": 1790547806.2075567, "worker_rss_bytes": 3034492928, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547806.2139902, "epoch": 19, "optimizer_updates": 266, "best_epoch": 19, "best_val_native_ci": 0.6992016434669495}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547819.2098653, "epoch": 20, "val_native_ci": 0.7038636803627014}
+{"kind": "memory_boundary", "epoch_seconds": 1790547822.6004858, "label": "epoch_20", "sample": {"epoch_seconds": 1790547822.6004822, "worker_rss_bytes": 2992447488, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547822.873678, "epoch": 20, "optimizer_updates": 280, "best_epoch": 20, "best_val_native_ci": 0.7038636803627014}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547836.0046415, "epoch": 21, "val_native_ci": 0.7082316279411316}
+{"kind": "memory_boundary", "epoch_seconds": 1790547839.4275825, "label": "epoch_21", "sample": {"epoch_seconds": 1790547839.427579, "worker_rss_bytes": 2992648192, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547839.4357786, "epoch": 21, "optimizer_updates": 294, "best_epoch": 21, "best_val_native_ci": 0.7082316279411316}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547852.4630203, "epoch": 22, "val_native_ci": 0.7138802409172058}
+{"kind": "memory_boundary", "epoch_seconds": 1790547855.8999627, "label": "epoch_22", "sample": {"epoch_seconds": 1790547855.8999574, "worker_rss_bytes": 3079344128, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547856.1033807, "epoch": 22, "optimizer_updates": 308, "best_epoch": 22, "best_val_native_ci": 0.7138802409172058}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547869.1462557, "epoch": 23, "val_native_ci": 0.7157788276672363}
+{"kind": "memory_boundary", "epoch_seconds": 1790547872.5720658, "label": "epoch_23", "sample": {"epoch_seconds": 1790547872.5720623, "worker_rss_bytes": 3036663808, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547872.5788622, "epoch": 23, "optimizer_updates": 322, "best_epoch": 23, "best_val_native_ci": 0.7157788276672363}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547885.739375, "epoch": 24, "val_native_ci": 0.7162492871284485}
+{"kind": "memory_boundary", "epoch_seconds": 1790547889.106052, "label": "epoch_24", "sample": {"epoch_seconds": 1790547889.1060474, "worker_rss_bytes": 3090087936, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547889.377986, "epoch": 24, "optimizer_updates": 336, "best_epoch": 24, "best_val_native_ci": 0.7162492871284485}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547902.4381506, "epoch": 25, "val_native_ci": 0.7197887897491455}
+{"kind": "memory_boundary", "epoch_seconds": 1790547905.9020073, "label": "epoch_25", "sample": {"epoch_seconds": 1790547905.9020035, "worker_rss_bytes": 3090096128, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547905.9957328, "epoch": 25, "optimizer_updates": 350, "best_epoch": 25, "best_val_native_ci": 0.7197887897491455}
+{"kind": "milestone", "epoch_seconds": 1790547905.9988556, "epoch": 25}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547919.1406026, "epoch": 26, "val_native_ci": 0.7237955927848816}
+{"kind": "memory_boundary", "epoch_seconds": 1790547922.5542939, "label": "epoch_26", "sample": {"epoch_seconds": 1790547922.5542903, "worker_rss_bytes": 3090096128, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547922.827561, "epoch": 26, "optimizer_updates": 364, "best_epoch": 26, "best_val_native_ci": 0.7237955927848816}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547935.9746556, "epoch": 27, "val_native_ci": 0.7280486822128296}
+{"kind": "memory_boundary", "epoch_seconds": 1790547939.4133599, "label": "epoch_27", "sample": {"epoch_seconds": 1790547939.4133556, "worker_rss_bytes": 3092697088, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547939.420356, "epoch": 27, "optimizer_updates": 378, "best_epoch": 27, "best_val_native_ci": 0.7280486822128296}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547952.5279598, "epoch": 28, "val_native_ci": 0.7290772199630737}
+{"kind": "memory_boundary", "epoch_seconds": 1790547956.0382872, "label": "epoch_28", "sample": {"epoch_seconds": 1790547956.0382822, "worker_rss_bytes": 3092701184, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547956.315111, "epoch": 28, "optimizer_updates": 392, "best_epoch": 28, "best_val_native_ci": 0.7290772199630737}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547969.4276192, "epoch": 29, "val_native_ci": 0.7314116954803467}
+{"kind": "memory_boundary", "epoch_seconds": 1790547972.8442063, "label": "epoch_29", "sample": {"epoch_seconds": 1790547972.8442023, "worker_rss_bytes": 3092705280, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547972.8548214, "epoch": 29, "optimizer_updates": 406, "best_epoch": 29, "best_val_native_ci": 0.7314116954803467}
+{"kind": "best_checkpoint", "epoch_seconds": 1790547985.9250796, "epoch": 30, "val_native_ci": 0.733635425567627}
+{"kind": "memory_boundary", "epoch_seconds": 1790547989.35412, "label": "epoch_30", "sample": {"epoch_seconds": 1790547989.3541162, "worker_rss_bytes": 3049132032, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790547989.3613944, "epoch": 30, "optimizer_updates": 420, "best_epoch": 30, "best_val_native_ci": 0.733635425567627}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548002.3565617, "epoch": 31, "val_native_ci": 0.734032392501831}
+{"kind": "memory_boundary", "epoch_seconds": 1790548005.9150445, "label": "epoch_31", "sample": {"epoch_seconds": 1790548005.9150405, "worker_rss_bytes": 3052343296, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548005.9214492, "epoch": 31, "optimizer_updates": 434, "best_epoch": 31, "best_val_native_ci": 0.734032392501831}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548018.9806309, "epoch": 32, "val_native_ci": 0.737602710723877}
+{"kind": "memory_boundary", "epoch_seconds": 1790548022.4612284, "label": "epoch_32", "sample": {"epoch_seconds": 1790548022.4612246, "worker_rss_bytes": 3105710080, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548022.7331612, "epoch": 32, "optimizer_updates": 448, "best_epoch": 32, "best_val_native_ci": 0.737602710723877}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548035.6934836, "epoch": 33, "val_native_ci": 0.7392987012863159}
+{"kind": "memory_boundary", "epoch_seconds": 1790548039.1344223, "label": "epoch_33", "sample": {"epoch_seconds": 1790548039.1344185, "worker_rss_bytes": 3106021376, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548039.1408653, "epoch": 33, "optimizer_updates": 462, "best_epoch": 33, "best_val_native_ci": 0.7392987012863159}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548052.1291242, "epoch": 34, "val_native_ci": 0.740652859210968}
+{"kind": "memory_boundary", "epoch_seconds": 1790548055.6119583, "label": "epoch_34", "sample": {"epoch_seconds": 1790548055.6119533, "worker_rss_bytes": 2835087360, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548055.885277, "epoch": 34, "optimizer_updates": 476, "best_epoch": 34, "best_val_native_ci": 0.740652859210968}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548068.994795, "epoch": 35, "val_native_ci": 0.7420425415039062}
+{"kind": "memory_boundary", "epoch_seconds": 1790548072.4647315, "label": "epoch_35", "sample": {"epoch_seconds": 1790548072.464727, "worker_rss_bytes": 3042639872, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548072.4715648, "epoch": 35, "optimizer_updates": 490, "best_epoch": 35, "best_val_native_ci": 0.7420425415039062}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548085.5000494, "epoch": 36, "val_native_ci": 0.7452549934387207}
+{"kind": "memory_boundary", "epoch_seconds": 1790548088.881439, "label": "epoch_36", "sample": {"epoch_seconds": 1790548088.8814354, "worker_rss_bytes": 3010899968, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548089.0652165, "epoch": 36, "optimizer_updates": 504, "best_epoch": 36, "best_val_native_ci": 0.7452549934387207}
+{"kind": "memory_boundary", "epoch_seconds": 1790548102.114508, "label": "epoch_37", "sample": {"epoch_seconds": 1790548102.1145039, "worker_rss_bytes": 3012263936, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548102.243855, "epoch": 37, "optimizer_updates": 518, "best_epoch": 36, "best_val_native_ci": 0.7452549934387207}
+{"kind": "memory_boundary", "epoch_seconds": 1790548115.267074, "label": "epoch_38", "sample": {"epoch_seconds": 1790548115.267069, "worker_rss_bytes": 3024941056, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548115.4015765, "epoch": 38, "optimizer_updates": 532, "best_epoch": 36, "best_val_native_ci": 0.7452549934387207}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548128.3713582, "epoch": 39, "val_native_ci": 0.7460672855377197}
+{"kind": "memory_boundary", "epoch_seconds": 1790548131.7355046, "label": "epoch_39", "sample": {"epoch_seconds": 1790548131.7355, "worker_rss_bytes": 3095846912, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548131.8956137, "epoch": 39, "optimizer_updates": 546, "best_epoch": 39, "best_val_native_ci": 0.7460672855377197}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548144.7528949, "epoch": 40, "val_native_ci": 0.7502670288085938}
+{"kind": "memory_boundary", "epoch_seconds": 1790548148.200996, "label": "epoch_40", "sample": {"epoch_seconds": 1790548148.2009826, "worker_rss_bytes": 3125141504, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548148.2087646, "epoch": 40, "optimizer_updates": 560, "best_epoch": 40, "best_val_native_ci": 0.7502670288085938}
+{"kind": "memory_boundary", "epoch_seconds": 1790548161.3085015, "label": "epoch_41", "sample": {"epoch_seconds": 1790548161.3084977, "worker_rss_bytes": 3125141504, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548161.4394357, "epoch": 41, "optimizer_updates": 574, "best_epoch": 40, "best_val_native_ci": 0.7502670288085938}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548174.545109, "epoch": 42, "val_native_ci": 0.7515605688095093}
+{"kind": "memory_boundary", "epoch_seconds": 1790548177.9433403, "label": "epoch_42", "sample": {"epoch_seconds": 1790548177.9433365, "worker_rss_bytes": 3117051904, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548178.152471, "epoch": 42, "optimizer_updates": 588, "best_epoch": 42, "best_val_native_ci": 0.7515605688095093}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548191.1326456, "epoch": 43, "val_native_ci": 0.7534525394439697}
+{"kind": "memory_boundary", "epoch_seconds": 1790548194.6183782, "label": "epoch_43", "sample": {"epoch_seconds": 1790548194.618374, "worker_rss_bytes": 3143237632, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548194.626562, "epoch": 43, "optimizer_updates": 602, "best_epoch": 43, "best_val_native_ci": 0.7534525394439697}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548207.6196253, "epoch": 44, "val_native_ci": 0.7537074089050293}
+{"kind": "memory_boundary", "epoch_seconds": 1790548211.0167787, "label": "epoch_44", "sample": {"epoch_seconds": 1790548211.0167742, "worker_rss_bytes": 3195940864, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548211.291264, "epoch": 44, "optimizer_updates": 616, "best_epoch": 44, "best_val_native_ci": 0.7537074089050293}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548224.253743, "epoch": 45, "val_native_ci": 0.755108118057251}
+{"kind": "memory_boundary", "epoch_seconds": 1790548227.7195754, "label": "epoch_45", "sample": {"epoch_seconds": 1790548227.719572, "worker_rss_bytes": 3220250624, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548227.7266595, "epoch": 45, "optimizer_updates": 630, "best_epoch": 45, "best_val_native_ci": 0.755108118057251}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548240.6272345, "epoch": 46, "val_native_ci": 0.7559082508087158}
+{"kind": "memory_boundary", "epoch_seconds": 1790548244.0500956, "label": "epoch_46", "sample": {"epoch_seconds": 1790548244.0500917, "worker_rss_bytes": 3304726528, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548244.1999974, "epoch": 46, "optimizer_updates": 644, "best_epoch": 46, "best_val_native_ci": 0.7559082508087158}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548257.087329, "epoch": 47, "val_native_ci": 0.7569920420646667}
+{"kind": "memory_boundary", "epoch_seconds": 1790548260.5246406, "label": "epoch_47", "sample": {"epoch_seconds": 1790548260.5246358, "worker_rss_bytes": 3383480320, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548260.5357063, "epoch": 47, "optimizer_updates": 658, "best_epoch": 47, "best_val_native_ci": 0.7569920420646667}
+{"kind": "memory_boundary", "epoch_seconds": 1790548273.5378826, "label": "epoch_48", "sample": {"epoch_seconds": 1790548273.537879, "worker_rss_bytes": 3425128448, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548273.6697435, "epoch": 48, "optimizer_updates": 672, "best_epoch": 47, "best_val_native_ci": 0.7569920420646667}
+{"kind": "memory_boundary", "epoch_seconds": 1790548286.7791183, "label": "epoch_49", "sample": {"epoch_seconds": 1790548286.7791145, "worker_rss_bytes": 3477950464, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548286.910249, "epoch": 49, "optimizer_updates": 686, "best_epoch": 47, "best_val_native_ci": 0.7569920420646667}
+{"kind": "memory_boundary", "epoch_seconds": 1790548303.1370797, "label": "epoch_50", "sample": {"epoch_seconds": 1790548303.137076, "worker_rss_bytes": 3541065728, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548303.2116122, "epoch": 50, "optimizer_updates": 700, "best_epoch": 47, "best_val_native_ci": 0.7569920420646667}
+{"kind": "milestone", "epoch_seconds": 1790548303.214714, "epoch": 50}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548316.1340034, "epoch": 51, "val_native_ci": 0.7600534558296204}
+{"kind": "memory_boundary", "epoch_seconds": 1790548319.5413094, "label": "epoch_51", "sample": {"epoch_seconds": 1790548319.541306, "worker_rss_bytes": 3586990080, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548319.8184304, "epoch": 51, "optimizer_updates": 714, "best_epoch": 51, "best_val_native_ci": 0.7600534558296204}
+{"kind": "memory_boundary", "epoch_seconds": 1790548332.6219506, "label": "epoch_52", "sample": {"epoch_seconds": 1790548332.6219466, "worker_rss_bytes": 3587899392, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548332.7492633, "epoch": 52, "optimizer_updates": 728, "best_epoch": 51, "best_val_native_ci": 0.7600534558296204}
+{"kind": "memory_boundary", "epoch_seconds": 1790548345.7648692, "label": "epoch_53", "sample": {"epoch_seconds": 1790548345.7648647, "worker_rss_bytes": 3633717248, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548345.9004014, "epoch": 53, "optimizer_updates": 742, "best_epoch": 51, "best_val_native_ci": 0.7600534558296204}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548358.7606547, "epoch": 54, "val_native_ci": 0.7603281140327454}
+{"kind": "memory_boundary", "epoch_seconds": 1790548362.2082152, "label": "epoch_54", "sample": {"epoch_seconds": 1790548362.2082117, "worker_rss_bytes": 3705556992, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548362.3201988, "epoch": 54, "optimizer_updates": 756, "best_epoch": 54, "best_val_native_ci": 0.7603281140327454}
+{"kind": "memory_boundary", "epoch_seconds": 1790548378.416189, "label": "epoch_55", "sample": {"epoch_seconds": 1790548378.4161854, "worker_rss_bytes": 3653046272, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548378.5540004, "epoch": 55, "optimizer_updates": 770, "best_epoch": 54, "best_val_native_ci": 0.7603281140327454}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548391.3092132, "epoch": 56, "val_native_ci": 0.7614768743515015}
+{"kind": "memory_boundary", "epoch_seconds": 1790548394.785663, "label": "epoch_56", "sample": {"epoch_seconds": 1790548394.7856596, "worker_rss_bytes": 3714551808, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548394.9382966, "epoch": 56, "optimizer_updates": 784, "best_epoch": 56, "best_val_native_ci": 0.7614768743515015}
+{"kind": "memory_boundary", "epoch_seconds": 1790548407.8884017, "label": "epoch_57", "sample": {"epoch_seconds": 1790548407.8883986, "worker_rss_bytes": 3714543616, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548408.004153, "epoch": 57, "optimizer_updates": 798, "best_epoch": 56, "best_val_native_ci": 0.7614768743515015}
+{"kind": "memory_boundary", "epoch_seconds": 1790548420.913939, "label": "epoch_58", "sample": {"epoch_seconds": 1790548420.9139347, "worker_rss_bytes": 3669168128, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548421.0492868, "epoch": 58, "optimizer_updates": 812, "best_epoch": 56, "best_val_native_ci": 0.7614768743515015}
+{"kind": "memory_boundary", "epoch_seconds": 1790548434.0580528, "label": "epoch_59", "sample": {"epoch_seconds": 1790548434.0580492, "worker_rss_bytes": 3680043008, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548434.1919224, "epoch": 59, "optimizer_updates": 826, "best_epoch": 56, "best_val_native_ci": 0.7614768743515015}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548446.9861429, "epoch": 60, "val_native_ci": 0.7626252770423889}
+{"kind": "memory_boundary", "epoch_seconds": 1790548450.397332, "label": "epoch_60", "sample": {"epoch_seconds": 1790548450.3973277, "worker_rss_bytes": 3691950080, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548450.6517901, "epoch": 60, "optimizer_updates": 840, "best_epoch": 60, "best_val_native_ci": 0.7626252770423889}
+{"kind": "memory_boundary", "epoch_seconds": 1790548463.5603473, "label": "epoch_61", "sample": {"epoch_seconds": 1790548463.5603437, "worker_rss_bytes": 3693105152, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548463.6985252, "epoch": 61, "optimizer_updates": 854, "best_epoch": 60, "best_val_native_ci": 0.7626252770423889}
+{"kind": "memory_boundary", "epoch_seconds": 1790548476.7557461, "label": "epoch_62", "sample": {"epoch_seconds": 1790548476.755743, "worker_rss_bytes": 3723821056, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548476.8859518, "epoch": 62, "optimizer_updates": 868, "best_epoch": 60, "best_val_native_ci": 0.7626252770423889}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548489.7683604, "epoch": 63, "val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548493.177606, "label": "epoch_63", "sample": {"epoch_seconds": 1790548493.1776023, "worker_rss_bytes": 3680854016, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548493.1847506, "epoch": 63, "optimizer_updates": 882, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548506.048082, "label": "epoch_64", "sample": {"epoch_seconds": 1790548506.0480793, "worker_rss_bytes": 3651297280, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548506.1803424, "epoch": 64, "optimizer_updates": 896, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548522.3401084, "label": "epoch_65", "sample": {"epoch_seconds": 1790548522.340105, "worker_rss_bytes": 3710615552, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548522.3473275, "epoch": 65, "optimizer_updates": 910, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548535.2863247, "label": "epoch_66", "sample": {"epoch_seconds": 1790548535.2863216, "worker_rss_bytes": 3743924224, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548535.4173388, "epoch": 66, "optimizer_updates": 924, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548548.4629395, "label": "epoch_67", "sample": {"epoch_seconds": 1790548548.4629364, "worker_rss_bytes": 3752103936, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548548.595678, "epoch": 67, "optimizer_updates": 938, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548561.4658577, "label": "epoch_68", "sample": {"epoch_seconds": 1790548561.465854, "worker_rss_bytes": 3761238016, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548561.5998266, "epoch": 68, "optimizer_updates": 952, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548574.702933, "label": "epoch_69", "sample": {"epoch_seconds": 1790548574.7029295, "worker_rss_bytes": 3749670912, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548574.8331187, "epoch": 69, "optimizer_updates": 966, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548591.2115355, "label": "epoch_70", "sample": {"epoch_seconds": 1790548591.2115307, "worker_rss_bytes": 3699404800, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548591.2192445, "epoch": 70, "optimizer_updates": 980, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548604.0191307, "label": "epoch_71", "sample": {"epoch_seconds": 1790548604.0191274, "worker_rss_bytes": 3740762112, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548604.1482742, "epoch": 71, "optimizer_updates": 994, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548616.984145, "label": "epoch_72", "sample": {"epoch_seconds": 1790548616.9841409, "worker_rss_bytes": 3782488064, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548617.120654, "epoch": 72, "optimizer_updates": 1008, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548630.0834157, "label": "epoch_73", "sample": {"epoch_seconds": 1790548630.083412, "worker_rss_bytes": 3795005440, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548630.2155242, "epoch": 73, "optimizer_updates": 1022, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "memory_boundary", "epoch_seconds": 1790548643.1976895, "label": "epoch_74", "sample": {"epoch_seconds": 1790548643.1976862, "worker_rss_bytes": 3835604992, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548643.3270347, "epoch": 74, "optimizer_updates": 1036, "best_epoch": 63, "best_val_native_ci": 0.7631511688232422}
+{"kind": "best_checkpoint", "epoch_seconds": 1790548656.1629293, "epoch": 75, "val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548659.620095, "label": "epoch_75", "sample": {"epoch_seconds": 1790548659.620092, "worker_rss_bytes": 3835908096, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548659.7783124, "epoch": 75, "optimizer_updates": 1050, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "milestone", "epoch_seconds": 1790548659.7812436, "epoch": 75}
+{"kind": "memory_boundary", "epoch_seconds": 1790548672.7261589, "label": "epoch_76", "sample": {"epoch_seconds": 1790548672.726155, "worker_rss_bytes": 3819556864, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548672.8544064, "epoch": 76, "optimizer_updates": 1064, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548685.5973163, "label": "epoch_77", "sample": {"epoch_seconds": 1790548685.5973127, "worker_rss_bytes": 3819552768, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548685.7370973, "epoch": 77, "optimizer_updates": 1078, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548698.543929, "label": "epoch_78", "sample": {"epoch_seconds": 1790548698.5439253, "worker_rss_bytes": 3787608064, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548698.6750445, "epoch": 78, "optimizer_updates": 1092, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548711.545658, "label": "epoch_79", "sample": {"epoch_seconds": 1790548711.5456548, "worker_rss_bytes": 3788935168, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548711.6773756, "epoch": 79, "optimizer_updates": 1106, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548728.0355165, "label": "epoch_80", "sample": {"epoch_seconds": 1790548728.0355127, "worker_rss_bytes": 3756957696, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548728.0424783, "epoch": 80, "optimizer_updates": 1120, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548740.820662, "label": "epoch_81", "sample": {"epoch_seconds": 1790548740.8206592, "worker_rss_bytes": 3781582848, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548740.9575481, "epoch": 81, "optimizer_updates": 1134, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548753.7905657, "label": "epoch_82", "sample": {"epoch_seconds": 1790548753.7905614, "worker_rss_bytes": 3770699776, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548753.9234805, "epoch": 82, "optimizer_updates": 1148, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548766.7797837, "label": "epoch_83", "sample": {"epoch_seconds": 1790548766.7797577, "worker_rss_bytes": 3726495744, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548766.920017, "epoch": 83, "optimizer_updates": 1162, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548779.6778696, "label": "epoch_84", "sample": {"epoch_seconds": 1790548779.6778662, "worker_rss_bytes": 3758469120, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548779.8092852, "epoch": 84, "optimizer_updates": 1176, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548795.8255498, "label": "epoch_85", "sample": {"epoch_seconds": 1790548795.8255455, "worker_rss_bytes": 3791364096, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548795.9615908, "epoch": 85, "optimizer_updates": 1190, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548808.8862371, "label": "epoch_86", "sample": {"epoch_seconds": 1790548808.8862338, "worker_rss_bytes": 3799470080, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548809.0173593, "epoch": 86, "optimizer_updates": 1204, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548821.8608887, "label": "epoch_87", "sample": {"epoch_seconds": 1790548821.860885, "worker_rss_bytes": 3811033088, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548821.9939935, "epoch": 87, "optimizer_updates": 1218, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548835.0178332, "label": "epoch_88", "sample": {"epoch_seconds": 1790548835.0178, "worker_rss_bytes": 3758501888, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548835.1534703, "epoch": 88, "optimizer_updates": 1232, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548848.0417016, "label": "epoch_89", "sample": {"epoch_seconds": 1790548848.0416973, "worker_rss_bytes": 3695714304, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548848.1806884, "epoch": 89, "optimizer_updates": 1246, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548864.244886, "label": "epoch_90", "sample": {"epoch_seconds": 1790548864.244883, "worker_rss_bytes": 3728838656, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548864.3774605, "epoch": 90, "optimizer_updates": 1260, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548877.124747, "label": "epoch_91", "sample": {"epoch_seconds": 1790548877.124743, "worker_rss_bytes": 3769708544, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548877.2347522, "epoch": 91, "optimizer_updates": 1274, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548889.9997644, "label": "epoch_92", "sample": {"epoch_seconds": 1790548889.999761, "worker_rss_bytes": 3736092672, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548890.125639, "epoch": 92, "optimizer_updates": 1288, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548902.8762965, "label": "epoch_93", "sample": {"epoch_seconds": 1790548902.8762934, "worker_rss_bytes": 3643478016, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548903.0140357, "epoch": 93, "optimizer_updates": 1302, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548915.962244, "label": "epoch_94", "sample": {"epoch_seconds": 1790548915.962241, "worker_rss_bytes": 3694948352, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548916.0957177, "epoch": 94, "optimizer_updates": 1316, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548932.2167826, "label": "epoch_95", "sample": {"epoch_seconds": 1790548932.2167788, "worker_rss_bytes": 3694972928, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548932.35084, "epoch": 95, "optimizer_updates": 1330, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548945.2454433, "label": "epoch_96", "sample": {"epoch_seconds": 1790548945.2454395, "worker_rss_bytes": 3697688576, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548945.383236, "epoch": 96, "optimizer_updates": 1344, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548958.1227791, "label": "epoch_97", "sample": {"epoch_seconds": 1790548958.1227748, "worker_rss_bytes": 3668373504, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548958.254457, "epoch": 97, "optimizer_updates": 1358, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548971.297624, "label": "epoch_98", "sample": {"epoch_seconds": 1790548971.2976205, "worker_rss_bytes": 3668385792, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548971.4301248, "epoch": 98, "optimizer_updates": 1372, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790548984.2985332, "label": "epoch_99", "sample": {"epoch_seconds": 1790548984.2985299, "worker_rss_bytes": 3626917888, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790548984.4325783, "epoch": 99, "optimizer_updates": 1386, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549000.4282496, "label": "epoch_100", "sample": {"epoch_seconds": 1790549000.4282453, "worker_rss_bytes": 3626926080, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549000.5674274, "epoch": 100, "optimizer_updates": 1400, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "milestone", "epoch_seconds": 1790549000.5706525, "epoch": 100}
+{"kind": "memory_boundary", "epoch_seconds": 1790549013.5634143, "label": "epoch_101", "sample": {"epoch_seconds": 1790549013.5634108, "worker_rss_bytes": 3626909696, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549013.6964917, "epoch": 101, "optimizer_updates": 1414, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549026.5089428, "label": "epoch_102", "sample": {"epoch_seconds": 1790549026.5089397, "worker_rss_bytes": 3626901504, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549026.6381903, "epoch": 102, "optimizer_updates": 1428, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549039.4734414, "label": "epoch_103", "sample": {"epoch_seconds": 1790549039.4734368, "worker_rss_bytes": 3626893312, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549039.6083193, "epoch": 103, "optimizer_updates": 1442, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549052.511123, "label": "epoch_104", "sample": {"epoch_seconds": 1790549052.511119, "worker_rss_bytes": 3573309440, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549052.645587, "epoch": 104, "optimizer_updates": 1456, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549068.7441638, "label": "epoch_105", "sample": {"epoch_seconds": 1790549068.7441595, "worker_rss_bytes": 3606310912, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549068.7517545, "epoch": 105, "optimizer_updates": 1470, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549081.6141596, "label": "epoch_106", "sample": {"epoch_seconds": 1790549081.6141553, "worker_rss_bytes": 3654520832, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549081.7461207, "epoch": 106, "optimizer_updates": 1484, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549094.777918, "label": "epoch_107", "sample": {"epoch_seconds": 1790549094.7779148, "worker_rss_bytes": 3661627392, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549094.9179003, "epoch": 107, "optimizer_updates": 1498, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549107.9045098, "label": "epoch_108", "sample": {"epoch_seconds": 1790549107.9045067, "worker_rss_bytes": 3670016000, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549108.04, "epoch": 108, "optimizer_updates": 1512, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549120.8759158, "label": "epoch_109", "sample": {"epoch_seconds": 1790549120.8759124, "worker_rss_bytes": 3670016000, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549121.0095594, "epoch": 109, "optimizer_updates": 1526, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549137.0384266, "label": "epoch_110", "sample": {"epoch_seconds": 1790549137.0384233, "worker_rss_bytes": 3688361984, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549137.0453641, "epoch": 110, "optimizer_updates": 1540, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549149.8357017, "label": "epoch_111", "sample": {"epoch_seconds": 1790549149.8356974, "worker_rss_bytes": 3688357888, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549149.9442947, "epoch": 111, "optimizer_updates": 1554, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549162.798942, "label": "epoch_112", "sample": {"epoch_seconds": 1790549162.7989392, "worker_rss_bytes": 3688345600, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549162.9060383, "epoch": 112, "optimizer_updates": 1568, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549175.8386507, "label": "epoch_113", "sample": {"epoch_seconds": 1790549175.8386478, "worker_rss_bytes": 3688345600, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549175.9741046, "epoch": 113, "optimizer_updates": 1582, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549188.838943, "label": "epoch_114", "sample": {"epoch_seconds": 1790549188.83894, "worker_rss_bytes": 3688349696, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549188.9698834, "epoch": 114, "optimizer_updates": 1596, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549205.1675558, "label": "epoch_115", "sample": {"epoch_seconds": 1790549205.1675525, "worker_rss_bytes": 3730309120, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549205.1741233, "epoch": 115, "optimizer_updates": 1610, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549217.9490697, "label": "epoch_116", "sample": {"epoch_seconds": 1790549217.9490666, "worker_rss_bytes": 3730284544, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549218.0807803, "epoch": 116, "optimizer_updates": 1624, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549231.0449421, "label": "epoch_117", "sample": {"epoch_seconds": 1790549231.0449386, "worker_rss_bytes": 3730284544, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549231.181579, "epoch": 117, "optimizer_updates": 1638, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549244.2284904, "label": "epoch_118", "sample": {"epoch_seconds": 1790549244.2284863, "worker_rss_bytes": 3730288640, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549244.35887, "epoch": 118, "optimizer_updates": 1652, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549257.1439729, "label": "epoch_119", "sample": {"epoch_seconds": 1790549257.1439698, "worker_rss_bytes": 3774631936, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549257.2828994, "epoch": 119, "optimizer_updates": 1666, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549273.4473128, "label": "epoch_120", "sample": {"epoch_seconds": 1790549273.4473088, "worker_rss_bytes": 3774648320, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549273.4582627, "epoch": 120, "optimizer_updates": 1680, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549286.390266, "label": "epoch_121", "sample": {"epoch_seconds": 1790549286.3902624, "worker_rss_bytes": 3731234816, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549286.5034602, "epoch": 121, "optimizer_updates": 1694, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549299.283318, "label": "epoch_122", "sample": {"epoch_seconds": 1790549299.2833145, "worker_rss_bytes": 3742208000, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549299.4147332, "epoch": 122, "optimizer_updates": 1708, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549312.1578858, "label": "epoch_123", "sample": {"epoch_seconds": 1790549312.1578815, "worker_rss_bytes": 3747180544, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549312.3003867, "epoch": 123, "optimizer_updates": 1722, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549325.1419282, "label": "epoch_124", "sample": {"epoch_seconds": 1790549325.141925, "worker_rss_bytes": 3747872768, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549325.275673, "epoch": 124, "optimizer_updates": 1736, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549341.3344836, "label": "epoch_125", "sample": {"epoch_seconds": 1790549341.3344789, "worker_rss_bytes": 3747905536, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549341.443899, "epoch": 125, "optimizer_updates": 1750, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549354.3255768, "label": "epoch_126", "sample": {"epoch_seconds": 1790549354.3255737, "worker_rss_bytes": 3756269568, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549354.4515493, "epoch": 126, "optimizer_updates": 1764, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549367.2485123, "label": "epoch_127", "sample": {"epoch_seconds": 1790549367.2485092, "worker_rss_bytes": 3756277760, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549367.3874936, "epoch": 127, "optimizer_updates": 1778, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549380.1968777, "label": "epoch_128", "sample": {"epoch_seconds": 1790549380.196874, "worker_rss_bytes": 3757150208, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549380.3016455, "epoch": 128, "optimizer_updates": 1792, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549393.202101, "label": "epoch_129", "sample": {"epoch_seconds": 1790549393.2020972, "worker_rss_bytes": 3757137920, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549393.339008, "epoch": 129, "optimizer_updates": 1806, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549409.6557055, "label": "epoch_130", "sample": {"epoch_seconds": 1790549409.6557019, "worker_rss_bytes": 3707691008, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549409.790263, "epoch": 130, "optimizer_updates": 1820, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549422.6600556, "label": "epoch_131", "sample": {"epoch_seconds": 1790549422.6600525, "worker_rss_bytes": 3719069696, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549422.7968552, "epoch": 131, "optimizer_updates": 1834, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549435.7677715, "label": "epoch_132", "sample": {"epoch_seconds": 1790549435.7677672, "worker_rss_bytes": 3726188544, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549435.884738, "epoch": 132, "optimizer_updates": 1848, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549448.7832327, "label": "epoch_133", "sample": {"epoch_seconds": 1790549448.7832296, "worker_rss_bytes": 3726188544, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549448.920339, "epoch": 133, "optimizer_updates": 1862, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549461.9381151, "label": "epoch_134", "sample": {"epoch_seconds": 1790549461.9381118, "worker_rss_bytes": 3726184448, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549462.0661302, "epoch": 134, "optimizer_updates": 1876, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549478.052955, "label": "epoch_135", "sample": {"epoch_seconds": 1790549478.0529516, "worker_rss_bytes": 3726233600, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549478.1912663, "epoch": 135, "optimizer_updates": 1890, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549490.9983087, "label": "epoch_136", "sample": {"epoch_seconds": 1790549490.9983056, "worker_rss_bytes": 3726225408, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549491.1356213, "epoch": 136, "optimizer_updates": 1904, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549503.8955817, "label": "epoch_137", "sample": {"epoch_seconds": 1790549503.8955777, "worker_rss_bytes": 3726213120, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549504.0327923, "epoch": 137, "optimizer_updates": 1918, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549517.0180104, "label": "epoch_138", "sample": {"epoch_seconds": 1790549517.018007, "worker_rss_bytes": 3726221312, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549517.1506498, "epoch": 138, "optimizer_updates": 1932, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549530.0271275, "label": "epoch_139", "sample": {"epoch_seconds": 1790549530.0271235, "worker_rss_bytes": 3726213120, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549530.1639075, "epoch": 139, "optimizer_updates": 1946, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549546.4020963, "label": "epoch_140", "sample": {"epoch_seconds": 1790549546.4020927, "worker_rss_bytes": 3734724608, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549546.5384316, "epoch": 140, "optimizer_updates": 1960, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549559.3436007, "label": "epoch_141", "sample": {"epoch_seconds": 1790549559.3435972, "worker_rss_bytes": 3734732800, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549559.4481068, "epoch": 141, "optimizer_updates": 1974, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549572.2801094, "label": "epoch_142", "sample": {"epoch_seconds": 1790549572.2801046, "worker_rss_bytes": 3725000704, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549572.406112, "epoch": 142, "optimizer_updates": 1988, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549585.3589127, "label": "epoch_143", "sample": {"epoch_seconds": 1790549585.358909, "worker_rss_bytes": 3724988416, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549585.49521, "epoch": 143, "optimizer_updates": 2002, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549598.289655, "label": "epoch_144", "sample": {"epoch_seconds": 1790549598.289651, "worker_rss_bytes": 3724996608, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549598.4193487, "epoch": 144, "optimizer_updates": 2016, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549614.620747, "label": "epoch_145", "sample": {"epoch_seconds": 1790549614.6207438, "worker_rss_bytes": 3725070336, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549614.6277435, "epoch": 145, "optimizer_updates": 2030, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549627.5030415, "label": "epoch_146", "sample": {"epoch_seconds": 1790549627.5030382, "worker_rss_bytes": 3725070336, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549627.6315053, "epoch": 146, "optimizer_updates": 2044, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549640.2970715, "label": "epoch_147", "sample": {"epoch_seconds": 1790549640.2970667, "worker_rss_bytes": 3741446144, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549640.4319801, "epoch": 147, "optimizer_updates": 2058, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549653.4146376, "label": "epoch_148", "sample": {"epoch_seconds": 1790549653.414632, "worker_rss_bytes": 3741442048, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549653.5231025, "epoch": 148, "optimizer_updates": 2072, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549666.4142535, "label": "epoch_149", "sample": {"epoch_seconds": 1790549666.41425, "worker_rss_bytes": 3749826560, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549666.5525193, "epoch": 149, "optimizer_updates": 2086, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "memory_boundary", "epoch_seconds": 1790549682.4744658, "label": "epoch_150", "sample": {"epoch_seconds": 1790549682.474462, "worker_rss_bytes": 3749974016, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "dta_epoch_completed", "epoch_seconds": 1790549682.613711, "epoch": 150, "optimizer_updates": 2100, "best_epoch": 75, "best_val_native_ci": 0.763698935508728}
+{"kind": "milestone", "epoch_seconds": 1790549682.6169667, "epoch": 150}
+{"kind": "best_validation_completed", "epoch_seconds": 1790549689.3202136, "validation": {"final_epoch": 150, "final_epoch_metrics": {"global_ci": 0.7630190377131371, "mse": 1.9118006693326228, "aupr": 0.788164226815408, "rm2": 0.4605971348519348, "mae_diagnostic": 1.0618761105058296, "prediction_count": 836}, "best_epoch": 75, "best_val_native_ci": 0.763698935508728, "best_full_vector_metrics": {"global_ci": 0.7628671099839891, "mse": 2.0795454131026423, "aupr": 0.7909076231845938, "rm2": 0.43335453171057686, "mae_diagnostic": 1.1169827209306107, "prediction_count": 836}, "best_metric_gaps_to_paper": {"ci_gap_to_paper": 0.005132890016010916, "aupr_gap_to_paper": -0.003907623184593811, "rm2_gap_to_paper": 0.01764546828942315, "mse_gap_to_paper": 0.17254541310264226}, "native_ci_selection_metric": "Keras val_cindex_score", "global_ci_metric": "repository emetrics.get_cindex on full vector", "best_checkpoint_restored": true}}
+{"kind": "memory_boundary", "epoch_seconds": 1790549689.3557007, "label": "after_best_checkpoint_restoration", "sample": {"epoch_seconds": 1790549689.3556972, "worker_rss_bytes": 3758723072, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
+{"kind": "test_fold_opened", "epoch_seconds": 1790549689.376134}
+{"kind": "test_evaluation_started", "epoch_seconds": 1790549689.3836837, "count": 1}
+{"kind": "test_evaluation_completed", "epoch_seconds": 1790549694.047874, "prediction_count": 834, "metrics": {"global_ci": 0.7672712011750952, "mse": 2.1138024472920205, "aupr": 0.7816621413718179, "rm2": 0.405840851423614, "mae_diagnostic": 1.1195960833986314, "prediction_count": 834, "native_ci": 0.7666398122442141, "native_ci_reconstructed_from_single_pass": true, "native_ci_method": "source cindex_score on each native batch, sample-count weighted; reconstructed from the single prediction pass"}}
+{"kind": "memory_boundary", "epoch_seconds": 1790549694.080742, "label": "after_test_evaluation", "sample": {"epoch_seconds": 1790549694.0807378, "worker_rss_bytes": 3790921728, "gpu_used_mib": 13883, "gpu_total_mib": 15360}}
